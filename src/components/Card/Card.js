@@ -10,7 +10,6 @@ class Card extends Component {
 				{(provided, snapshot) => (
 					<div
 						className={classes.cardContainer}
-						innerRef={provided.innerRef}
 						ref={provided.innerRef}
 						{...provided.draggableProps}
 						{...provided.dragHandleProps}

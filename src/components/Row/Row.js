@@ -35,7 +35,6 @@ class Row extends Component {
 									<div
 										className={classes.cardList}
 										isDraggingOver={snapshot.isDraggingOver}
-										innerRef={provided.innerRef}
 										ref={provided.innerRef}
 										{...provided.droppableProps}>
 										{this.props.cards.map((card, index) => (

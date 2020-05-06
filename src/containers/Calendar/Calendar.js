@@ -120,7 +120,6 @@ class Calendar extends Component {
 						<div
 							className={classes.calendarContainer}
 							{...provided.droppableProps}
-							innerRef={provided.innerRef}
 							ref={provided.innerRef}>
 							{this.state.rowOrder.map((rowId, index) => {
 								const row = this.state.rows[rowId];

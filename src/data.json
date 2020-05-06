@@ -1,0 +1,43 @@
+{
+	"cards": {
+		"card-1": {
+			"id": "card-1",
+			"content": "Instagram - 15:00pm"
+		},
+		"card-2": {
+			"id": "card-2",
+			"content": "Facebook - 16:00pm"
+		},
+		"card-3": {
+			"id": "card-3",
+			"content": "Instagram - 17:00pm"
+		},
+		"card-4": {
+			"id": "card-4",
+			"content": "Twitter - 20:00pm"
+		}
+	},
+	"rows": {
+		"row-1": {
+			"id": "row-1",
+			"title": "Monday 4th May",
+			"cardIds": ["card-1", "card-2", "card-3", "card-4"]
+		},
+		"row-2": {
+			"id": "row-2",
+			"title": "Tuesday 5th May",
+			"cardIds": []
+		},
+		"row-3": {
+			"id": "row-3",
+			"title": "Thursday 7th May",
+			"cardIds": []
+		},
+		"row-4": {
+			"id": "row-4",
+			"title": "Friday 8th May",
+			"cardIds": []
+		}
+	},
+	"rowOrder": ["row-1", "row-2", "row-3", "row-4"]
+}
