@@ -1,0 +1,16 @@
+.rowContainer {
+	background-color: white;
+	margin: 8px;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cardList {
+	padding: 8px;
+	background-color: inherit;
+	flex-grow: 1;
+	display: flex;
+	min-height: 100px;
+}

@@ -1,0 +1,22 @@
+.cardContainer {
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 2px;
+	padding: 8px;
+	margin-bottom: 8px;
+	margin-right: 10px;
+	background-color: "white";
+	width: 220px;
+	display: flex;
+	flex-direction: column;
+}
+
+.cardTitle {
+	color: red;
+	padding: 8px;
+	margin: 0;
+}
+
+.cardCopy {
+	font-size: 14px;
+}

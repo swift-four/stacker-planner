@@ -1,0 +1,4 @@
+.calendarContainer {
+	display: flex;
+	flex-direction: column;
+}
