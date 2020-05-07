@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Row from "../../components/Row/Row";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import classes from "../Calendar/Calendar.module.css";
+import { calendarsRef } from "../../firebase";
+import axios from "axios";
 
 class Calendar extends Component {
 	state = {
@@ -34,6 +36,21 @@ class Calendar extends Component {
 			},
 		},
 		rowOrder: ["row-1", "row-2", "row-3", "row-4"],
+		currentCalendar: [],
+	};
+
+	componentDidMount() {
+		this.getCalendar();
+	}
+
+	getCalendar = async () => {
+		try {
+			const calendarId = "yCbHGJMsK1RZ79A7yNb8";
+			const calendar = await calendarsRef.doc(calendarId).get();
+			this.setState({ currentCalendar: calendar.data().calendar });
+		} catch (error) {
+			console.log("Error getting boards", error);
+		}
 	};
 
 	onDragEnd = (result) => {
@@ -113,6 +130,7 @@ class Calendar extends Component {
 	};
 
 	render() {
+		console.log("State after rendering", this.state.currentCalendar);
 		return (
 			<DragDropContext onDragEnd={this.onDragEnd}>
 				<Droppable droppableId="all-rows" direction="vertical" type="row">
