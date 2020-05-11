@@ -14,7 +14,8 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-var db = firebase.firestore();
+// var db = firebase.firestore();
+let database = firebase.database();
 const calendarsRef = db.collection("calendars");
 
 export { calendarsRef };

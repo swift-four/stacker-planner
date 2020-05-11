@@ -1,7 +1,7 @@
 .rowContainer {
 	background-color: white;
-	margin: 8px;
 	border: 1px solid lightgrey;
+	margin-bottom: 10px;
 	border-radius: 2px;
 	display: flex;
 	flex-direction: column;
@@ -13,4 +13,17 @@
 	flex-grow: 1;
 	display: flex;
 	min-height: 100px;
+}
+
+.rowHeaderInput {
+	font-size: 14px;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.rowHeaderInput:hover {
+	background-color: #f0f0f0;
+	cursor: pointer;
 }

@@ -1,0 +1,31 @@
+.navbarWrapper {
+	background-color: #026aa7;
+	display: flex;
+	justify-content: center;
+}
+
+.navbarContainer {
+	width: 99%;
+	display: flex;
+	margin: auto;
+	padding: 5px 0px 5px 0px;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.logOutButton {
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 14px;
+	color: white;
+	font-weight: bolder;
+	padding: 5px 12px 5px 12px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+
+.navbarHeading {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
